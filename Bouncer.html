@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncer SS (No. 120) - Irish Wrecks Online Redesign</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0B192E;
+            --container-bg: #1B2A41;
+            --accent-button: #10B981;
+            --text-primary: #F8FAFC;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'EB Garamond', serif;
+            font-size: 18px; 
+            margin: 0;
+            padding: 0 0 40px 0; 
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--container-bg);
+            padding: 15px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .logo-text { 
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'EB Garamond', serif;
+            color: var(--accent-button);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-button);
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header.page-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .last-update {
+            font-size: 1.1rem;
+            color: var(--accent-button);
+            font-style: italic;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--container-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            vertical-align: middle;
+        }
+
+        .label-cell {
+            font-weight: bold;
+            font-style: italic;
+            color: var(--accent-button);
+            width: 20%;
+        }
+
+        .data-cell {
+            width: 30%;
+        }
+
+        .section-header {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 2rem;
+            margin: 40px 0 15px 0;
+            border-bottom: 1px solid var(--accent-button);
+            padding-bottom: 10px;
+        }
+
+        .notes-box {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        ul { padding-left: 25px; }
+        li { margin-bottom: 12px; font-size: 1.2rem; }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 2px solid var(--accent-button);
+            border-radius: 4px;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #source-details {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-button);
+            display: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+        <div class="logo-text">IRISH WRECKS ONLINE</div>
+    </div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <header class="page-title">
+        <h1>Bouncer SS (No. 120)</h1>
+        <span class="last-update">Last update - 03-Apr-2006</span>
+    </header>
+
+    <table>
+        <tr>
+            <td class="label-cell">Vessel Type:</td>
+            <td class="data-cell">Salvage Ship</td>
+            <td class="label-cell">Location:</td>
+            <td class="data-cell">Co. Antrim</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Date of Loss:</td>
+            <td class="data-cell">28th September 1921</td>
+            <td class="label-cell">Place:</td>
+            <td class="data-cell">Rathlin Island</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Cause of Loss:</td>
+            <td class="data-cell">Struck Rocks</td>
+            <td class="label-cell">Boat Dive from:</td>
+            <td class="data-cell">Ballycastle</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Charted Depth:</td>
+            <td class="data-cell">8m</td>
+            <td class="label-cell">Irish O.S. Map:</td>
+            <td class="data-cell">Discovery Series No. 5</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Height of Wreck:</td>
+            <td class="data-cell">Scattered</td>
+            <td class="label-cell">Admiralty Chart No:</td>
+            <td class="data-cell">2798</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Hull Material:</td>
+            <td class="data-cell">Steel</td>
+            <td class="label-cell">Latitude (approx.):</td>
+            <td class="data-cell">55° 17' 30" North</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Type of Seabed:</td>
+            <td class="data-cell">Boulders and kelp</td>
+            <td class="label-cell">Longitude (approx.):</td>
+            <td class="data-cell">06° 17' 00" West</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Average Visibility:</td>
+            <td class="data-cell">5 - 10m</td>
+            <td class="label-cell">Diving Experience:</td>
+            <td class="data-cell">Novice</td>
+        </tr>
+    </table>
+
+    <div class="section-header">Historical & Diving Notes</div>
+    <div class="notes-box">
+        <ul>
+            <li>Built in 1879 by H.M. Dockyard, Pembroke; owned by North of Ireland Marine Salvage Co.</li>
+            <li>Served as a submarine tender, supply boat, and gunboat; was involved in the relief of General Gordon on the Nile.</li>
+            <li>Struck rocks at Tolovney while salvaged anchor cables snapped during a ceilidh; no lives were lost.</li>
+            <li>Lies at the same site as the "Knights Gareth" with wreckage scattered; largest object is a boiler.</li>
+            <li>Her steel propeller is located in a nearby cave. Area has little to no current.</li>
+        </ul>
+    </div>
+
+    <div class="section-header">Source Publications</div>
+    <select id="pubSelect">
+        <option value="">-- Select a publication --</option>
+        <option value="stokes">Irish Wrecks Database</option>
+        <option value="larn">Shipwreck Index of Ireland</option>
+        <option value="bourke">Shipwrecks of the Irish Coast 1105-1993</option>
+        <option value="cecil">The Harsh Winds of Rathlin</option>
+    </select>
+
+    <div id="source-details">
+        <p id="details-text"></p>
+    </div>
+</div>
+
+<script>
+    const publications = {
+        stokes: "Roy Stokes & Liam Dowling. Irish Wrecks Database.",
+        larn: "Richard & Bridget Larn (2002). Lloyd's Register - Fairplay Ltd. ISBN: 1900839970",
+        bourke: "Dr. Edward J. Bourke (1994). ISBN: 0952302705",
+        cecil: "Tommy Cecil (1990). Impact Printing. ISBN: 0948154659"
+    };
+
+    const select = document.getElementById('pubSelect');
+    const box = document.getElementById('source-details');
+    const text = document.getElementById('details-text');
+
+    select.addEventListener('change', function() {
+        if (this.value) {
+            text.textContent = publications[this.value];
+            box.style.display = 'block';
+        } else {
+            box.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

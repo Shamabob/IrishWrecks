@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipwreck Explorers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'EB Garamond', serif;
+        }
+
+        body {
+            background-color: #1b2a41;
+        }
+
+        /* HEADER - Aligned with first file */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1B2A41;
+            padding: 15px 40px; /* Adjusted for logo height */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px; /* Adjust logo size */
+            width: auto;
+            border-radius: 50%; /* Circular crop if desired */
+        }
+
+        .logo-text { 
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: #F8FAFC;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .nav-links a:hover {
+            color: #10B981;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+        }
+
+        .forum {
+            flex: 2;
+            background-color: #0b192e;
+            color: white;
+            padding: 60px 50px;
+            min-width: 400px;
+        }
+
+        .forum h2 {
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #10b983;
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 36px;
+            font-weight: 700;
+            color: #10b983;
+        }
+
+        .discussion {
+            background: #1b2a41;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(16,185,131,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .discussion h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 15px;
+            background: #1b2a41;
+            border: 1px solid #10b983;
+            color: white;
+            padding: 15px;
+            border-radius: 4px;
+            resize: none;
+            font-size: 1rem;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #10b983;
+        }
+
+        .submit {
+            background: #10b983;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .submit:hover {
+            transform: translateY(-1px);
+        }
+
+        .post {
+            background: #1b2a41;
+            border-left: 4px solid #10b983;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 0 4px 4px 0;
+            position: relative;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        aside { 
+            flex: 1; 
+            display: flex; 
+            flex-direction: column; 
+            min-width: 350px; 
+        }
+
+        .section { 
+            background-color: #1b2a41; 
+            padding: 60px 40px; 
+            flex: 1; 
+            color: #fff; 
+        }
+
+        .list { 
+            list-style: none;
+            margin-top: 20px; 
+        }
+
+        .item { 
+            margin-bottom: 25px; 
+            padding-bottom: 10px; 
+            border-bottom: 1px solid rgba(255,255,255,0.1); 
+        }
+
+        .date { 
+            font-size: 16px;
+            font-weight: bold; 
+            display: block; 
+            color: #10b983;
+        }
+
+        .section a {
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .section h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #10b983;
+            border-bottom: 2px solid #10b983;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .clubs{
+            background-color: #10b983;
+            padding: 60px 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .clubs h3 {
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .link { 
+            background-color: #1b2a41; 
+            border: none; 
+            padding: 15px 30px; 
+            margin: 20px 0; 
+            cursor: pointer; 
+        }
+
+        .link a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Shipwreck Explorers Logo" class="logo-img">
+            <div class="logo-text">SHIPWRECK EXPLORERS</div>
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="News.html">News</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section class="forum">
+            <h2>Community Forum</h2>
+
+            <div class="discussion">
+                <h3>Make a new post!!!</h3>
+                <textarea id="myInput" placeholder="diving experience, favourite location..."></textarea>
+                <button class="submit" onclick="makePost()">Post</button>
+            </div>
+            
+            <div id="postList"></div>
+        </section>
+
+        <aside>
+           <section class="clubs">
+                <h3>JOIN A SCUBA CLUB</h3>
+                <div style="font-size: 50px; margin: 15px 0;">🤿</div>
+                <button class="link"><a href="clubs.html">CLUBS NEAR YOU</a></button>
+                <p style="font-size: 16px;">Connect, Dive, and Explore together!</p>
+            </section>
+
+            <section class="section">
+                <h3>NEWS & UPDATES</h3>
+                <ul class="list">
+                    <li class="item">
+                        <span class="date">25 Jul 2008</span>
+                        <a>www.irishwrecksonline.net given "Nautical Awards Program" Award.</a>
+                    </li>
+                    <li class="item">
+                        <span class="date">09 Aug 2006</span>
+                        <a>www.irishwrecksonline.net given the "GOLD SITE" Maritime Web Award.</a>
+                    </li>
+                </ul>
+                <a href="News.html" style="font-size: 16px; font-weight: bold;">VIEW ALL UPDATES...</a>
+            </section>
+        </aside>
+    </div>
+</div>
+
+<script>
+function makePost() {
+    var text = document.getElementById("myInput").value;
+
+    if (text.trim() === "") {
+        alert("Field cannot be empty.");
+        return;
+    }
+
+    var newDiv = document.createElement("div");
+    newDiv.className = "post";
+
+    newDiv.innerHTML = `
+        <span class="delete-btn" onclick="this.parentElement.remove()">Delete</span>
+        <p style="line-height: 1.5;">${text}</p>
+        <small style="display:block; margin-top:10px; color:#fff; font-size: 14px;">Posted Just Now</small>
+    `;
+
+    var list = document.getElementById("postList");
+    list.insertBefore(newDiv, list.firstChild);
+    document.getElementById("myInput").value = "";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - IRISH WRECKS ONLINE</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #0B192E;
+      --container-bg: #1B2A41;
+      --accent-button: #10B981;
+      --text-primary: #F8FAFC;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'EB Garamond', serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      padding: 0 0 40px 0;
+    }
+
+    /* HEADER */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--container-bg);
+      padding: 15px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 30px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-img {
+      height: 60px;
+      width: auto;
+      border-radius: 50%;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent-button);
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: var(--accent-button);
+    }
+
+    /* LAYOUT */
+    .wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: var(--container-bg);
+      padding: 40px;
+      margin-bottom: 40px;
+      border-radius: 8px;
+    }
+
+    .section-title {
+      font-family: 'Eagle Lake', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--accent-button);
+      text-align: center;
+    }
+
+    /* AWARDS GRID */
+    .awards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .award-card {
+      background-color: var(--bg-color);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      text-align: center;
+    }
+
+    .award-card img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+
+    /* AUTHOR INFO */
+    .author-info h2 {
+      font-family: 'Eagle Lake', cursive;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .author-info h3 {
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: var(--accent-button);
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* CONDITIONS SECTION */
+    .conditions-box {
+      background-color: rgba(16, 185, 129, 0.05);
+      border: 1px solid var(--accent-button);
+    }
+
+    .conditions-list {
+        list-style-type: square;
+        padding-left: 25px;
+        font-size: 1.1rem;
+    }
+
+    .conditions-list li {
+        margin-bottom: 10px;
+    }
+
+    /* FORM STYLE */
+    .contact-form {
+      max-width: 600px;
+    }
+
+    label { display: block; margin-top: 15px; font-weight: 600; }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      background-color: var(--bg-color);
+      border: 1px solid var(--accent-button);
+      color: var(--text-primary);
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: var(--accent-button);
+      color: var(--bg-color);
+      border: none;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background-color: var(--container-bg);
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 900px) {
+      .site-header { flex-direction: column; gap: 15px; }
+      .nav-links a { margin: 0 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo-container">
+    <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+    <div class="logo-text">IRISH WRECKS ONLINE</div>
+  </div>
+  <nav class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="community.html">Community</a>
+  </nav>
+</header>
+
+<div class="wrapper">
+  
+  <section class="author-info">
+    <h1 class="section-title">About the Author</h1>
+    <h2>Randal Armstrong</h2>
+    <h3>Irishwrecksonline - on the internet since 1997</h3>
+    <p>This award winning site is the result of many years of gathering and collating information on the dived wrecks around the whole of the Irish coast. Information held on each wreck site is in a "potted" form, as most divers only require the bare bones with regards to historical details.</p>
+    <p>Special thanks to Dr. Edward J. Bourke, author Ian Wilson, and Michael Montgomery for their contributions to this database.</p>
+    <p style="font-style: italic; text-align: center; color: var(--accent-button);">"Look but not touch, so that others coming behind you can marvel at the treasures beneath our waves."</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Site Awards</h2>
+    <div class="awards-grid">
+      <div class="award-card">
+        <img src="image 1.png" alt="Award 1">
+        <h3>Gold Site Award</h3>
+        <p>Issued by Maritime Web Site Awards for unique research and historical value.</p>
+      </div>
+      <div class="award-card">
+        <img src="image 2.png" alt="Award 2">
+        <h3>World Class Website</h3>
+        <p>Honored by HindSight Fishing Charters for excellence in concept and rich content.</p>
+      </div>
+      <div class="award-card">
+        <img src="image 3.png" alt="Award 3">
+        <h3>Award of Merit</h3>
+        <p>Issued by Lagoon View Yacht Club for excellence in maritime documentation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="conditions-box">
+    <h2 class="section-title">Conditions of Use</h2>
+    <ul class="conditions-list">
+        <li>This website is created for educational purposes as part of a university coursework project at Heriot-Watt University.</li>
+        <li>All shipwreck data and historical references provided are for informational and research purposes only.</li>
+        <li>Content, including original research and gathered imagery, may not be copied or reused for commercial purposes without explicit permission.</li>
+        <li>No personal data submitted through our contact forms is stored permanently or shared with third parties.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Get In Touch</h2>
+    <form class="contact-form">
+      <label for="name">Your Name</label>
+      <input id="name" type="text" placeholder="Enter your name">
+
+      <label for="email">Your Email</label>
+      <input id="email" type="email" placeholder="Enter your email">
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</div>
+
+<footer class="site-footer">
+  <p>© 2026 Shipwreck Explorers | Heriot-Watt University Project</p>
+</footer>
+
+</body>
+</html>

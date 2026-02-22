@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Join a club</title>
+    <style>
+        body {
+        background: #1b2a41;
+            background-color: #0b192e;;
+            font-family:'EB Garamond';
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+        }
+
+        .item {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .item img {
+            display: block;
+            margin: 0 auto 15px auto;
+            max-height: 145px; 
+            border: 5px solid #10b983; 
+        }
+
+        .link {
+            color: #fff;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .footer {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 40px;
+        }
+
+        .left { 
+        text-align: center; 
+        font-weight:bold ;
+        font-size: larger;
+        color: #10b983;
+        font-family: 'EB Garamond';
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+        }
+
+       .submit {
+            font-family: 'EB Garamond';
+            background-color: #10b983;
+            color: #fff;
+            position: relative;
+            border: 2px solid #fff;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: medium;
+        
+           
+       }
+    </style>
+    <script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value.trim();
+  let y = document.forms["myForm"]["fexperience"].value.trim();
+  let z = document.forms["myForm"]["fclub"].value.trim();
+  if (x === "" || y === "" || z === "") {
+    alert("All fields must be filled out");
+    return false;
+  }
+   return true;
+}
+</script>
+
+</head>
+<body>
+<h1 style="color: #fff;text-align:center; font-weight: bold;"> Available Diving Clubs</h1>
+    <div class="container">
+        <div class="item">
+            <img src="bsac logo.jpg" alt="BSAC Logo" style="color: #fff;">
+            <a href="https://www.bsac.com/home/" class="link">The British Sub Aqua Club</a>
+        </div>
+
+        <div class="item">
+            <img src="iuclogo.jpg" alt="IUC Logo" style="color: #fff;">
+            <a href="http://www.cft.ie/about.htm" class="link">The Irish Underwater Council</a>
+        </div>
+
+        <div class="item">
+            <img src="saclogo.jpg" alt="SAA Logo" style="color: #fff;">
+            <a href="https://saa.org.uk/" class="link">The Sub Aqua Association</a>
+        </div>
+    </div>
+
+
+<h1 style= "color:#fff; text-align:center; font-weight: bold;">Join a Diving Club</h1>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+  <p class="left">
+  Name: <input type="text" name="fname" style="background-color: #1b2a41; color: #fff; padding: 20px;">
+  </p>
+  <p class="left">
+  Experience: <input type="text" name="fexperience" style="background-color: #1b2a41; color: #fff; padding: 20px;">
+  </p>
+  <p class="left">
+  Diving Club: <input type="text" name="fclub" style="background-color: #1b2a41; color: #fff; padding: 20px;">
+  </p>
+  <p class="left">
+  <button class="submit" onclick="makePost()">Submit</button>
+  </p>
+
+</form>
+
+ <p class="footer">
+        Whether you are a complete novice or already qualified, you will be made welcome at any of these clubs.
+    </p>
+
+</body>
+</html>

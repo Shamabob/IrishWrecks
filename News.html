@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>News & Updates</title>
+
+    <style>
+        :root {
+            --bg-color: #0B192E;
+            --container-bg: #1B2A41;
+            --accent-button: #10B981;
+            --text-primary: #F8FAFC;
+        }
+
+        body {
+            font-family: 'EB Garamond', serif;
+            background: var(--bg-color);
+            margin: 0;
+            padding: 0 0 40px 0;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--container-bg);
+            padding: 15px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .logo-text { 
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent-button);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-button);
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .item {
+            background: var(--container-bg);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-button);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: var(--accent-button);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .summary {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+        <div class="logo-text">IRISH WRECKS ONLINE</div>
+    </div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <h1>News & Updates</h1>
+
+    <div class="item">
+        <div class="date">25 Jul 2008</div>
+        <div class="title">Nautical Award</div>
+        <div class="summary">www.irishwrecksonline.net given "Nautical Awards Program" Award</div>
+    </div>
+
+    <div class="item">
+        <div class="date">09 Aug 2006</div>
+        <div class="title">Gold Site Award</div>
+        <div class="summary">www.irishwrecksonline.net given the "GOLD SITE" Maritime Web Award.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">27 Dec 2020</div>
+        <div class="title">Bandon S.S.</div>
+        <div class="summary">Reference sources added to the wreck page.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">16 Feb 2021</div>
+        <div class="title">Andania S.S.</div>
+        <div class="summary">GPS coordinates and specialist dive depth (123m) updated.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">03 Apr 2006</div>
+        <div class="title">Bouncer S.S.</div>
+        <div class="summary">Wreck dive details and "Novice" experience rating confirmed.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">07 Jun 2020</div>
+        <div class="title">Shaun Shaun M.</div>
+        <div class="summary">New wreck dive details + new photo added.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">08 Jul 2020</div>
+        <div class="title">Polewell S.S.</div>
+        <div class="summary">Reference sources and diving warnings updated.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">25 Oct 2005</div>
+        <div class="title">Gavina S.F.V.</div>
+        <div class="summary">Entry added to the Co. Antrim North list.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">23 Oct 2020</div>
+        <div class="title">Guillemot L.V.</div>
+        <div class="summary">Updated as part of site-wide link corrections.</div>
+    </div>
+
+    <div class="item">
+        <div class="date">14 Aug 2022</div>
+        <div class="title">Malmanger S.S.</div>
+        <div class="summary">New photo added to the database.</div>
+    </div>
+</div>
+
+</body>
+</html>

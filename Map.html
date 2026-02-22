@@ -1,0 +1,76 @@
+<div class="map-container">
+    <svg viewBox="-30 -30 460 560" xmlns="http://www.w3.org/2000/svg">
+        <g class="grid-lines" stroke="#2C4A73" stroke-width="1.5" stroke-dasharray="4">
+            <line x1="0" y1="0" x2="0" y2="500" />
+            <line x1="100" y1="0" x2="100" y2="500" />
+            <line x1="200" y1="0" x2="200" y2="500" />
+            <line x1="300" y1="0" x2="300" y2="500" />
+            <line x1="400" y1="0" x2="400" y2="500" />
+
+            <line x1="0" y1="0" x2="400" y2="0" />
+            <line x1="0" y1="100" x2="400" y2="100" />
+            <line x1="0" y1="200" x2="400" y2="200" />
+            <line x1="0" y1="300" x2="400" y2="300" />
+            <line x1="0" y1="400" x2="400" y2="400" />
+            <line x1="0" y1="500" x2="400" y2="500" />
+        </g>
+
+        <g class="grid-labels" fill="#F8FAFC" font-family="Arial" font-size="13" font-weight="bold" opacity="0.9">
+            <text x="50" y="-12" text-anchor="middle">A</text>
+            <text x="150" y="-12" text-anchor="middle">B</text>
+            <text x="250" y="-12" text-anchor="middle">C</text>
+            <text x="350" y="-12" text-anchor="middle">D</text>
+            
+            <text x="-20" y="55">1</text>
+            <text x="-20" y="155">2</text>
+            <text x="-20" y="255">3</text>
+            <text x="-20" y="355">4</text>
+            <text x="-20" y="455">5</text>
+        </g>
+
+        <path d="M210,15 L245,25 L255,15 L275,35 L285,75 L335,90 L350,130 L345,180 L365,260 L350,320 L340,400 L310,440 L280,475 L240,485 L180,485 L145,465 L110,475 L90,440 L115,410 L85,385 L65,340 L100,285 L85,260 L125,190 L185,165 L175,135 L180,85 L200,60 Z" class="map-land" />
+        
+        <g class="city-label" transform="translate(235, 55)"><text>L'Derry</text></g>
+        <g class="city-label" transform="translate(320, 105)"><text>Belfast</text></g>
+        <g class="city-label" transform="translate(180, 150)"><text>Sligo</text></g>
+        <g class="city-label" transform="translate(315, 270)"><text>Dublin</text></g>
+        <g class="city-label" transform="translate(155, 300)"><text>Galway</text></g>
+        <g class="city-label" transform="translate(200, 365)"><text>Limerick</text></g>
+        <g class="city-label" transform="translate(285, 425)"><text>Waterford</text></g>
+        <g class="city-label" transform="translate(205, 460)"><text>Cork</text></g>
+    </svg>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+    .map-container {
+        background-color: #0B192E;
+        padding: 40px;
+        border-radius: 12px;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .map-land {
+        fill: #10B981;
+        stroke: #0B192E;
+        stroke-width: 1;
+    }
+
+    .city-label text {
+        fill: #F8FAFC;
+        font-family: 'Eagle Lake', serif;
+        font-size: 14px;
+        text-anchor: middle;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));
+    }
+
+    .city-label:hover text {
+        font-size: 22px;
+        fill: #FFFFFF;
+    }
+</style>

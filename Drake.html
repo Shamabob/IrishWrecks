@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drake HMS (No. 300) - Irish Wrecks Online Redesign</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0B192E;
+            --container-bg: #1B2A41;
+            --accent-button: #10B981;
+            --text-primary: #F8FAFC;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'EB Garamond', serif;
+            font-size: 18px; 
+            margin: 0;
+            padding: 0 0 40px 0;
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--container-bg);
+            padding: 15px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .logo-text { 
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'EB Garamond', serif;
+            color: var(--accent-button);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-button);
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header.page-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .last-update {
+            font-size: 1.1rem;
+            color: var(--accent-button);
+            font-style: italic;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--container-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            vertical-align: middle;
+        }
+
+        .label-cell {
+            font-weight: bold;
+            font-style: italic;
+            color: var(--accent-button);
+            width: 20%;
+        }
+
+        .data-cell {
+            width: 30%;
+        }
+
+        .section-header {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 2rem;
+            margin: 40px 0 15px 0;
+            border-bottom: 1px solid var(--accent-button);
+            padding-bottom: 10px;
+        }
+
+        .notes-box {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        ul { padding-left: 25px; }
+        li { margin-bottom: 12px; font-size: 1.2rem; }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 2px solid var(--accent-button);
+            border-radius: 4px;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #source-details {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-button);
+            display: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+        <div class="logo-text">IRISH WRECKS ONLINE</div>
+    </div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <header class="page-title">
+        <h1>Drake HMS (No. 300)</h1>
+        <span class="last-update">Last update - 06-Apr-2009</span>
+    </header>
+
+    <table>
+        <tr>
+            <td class="label-cell">Vessel Type:</td>
+            <td class="data-cell">Armoured Cruiser</td>
+            <td class="label-cell">Location:</td>
+            <td class="data-cell">Co. Antrim</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Date of Loss:</td>
+            <td class="data-cell">2nd October 1917</td>
+            <td class="label-cell">Place:</td>
+            <td class="data-cell">Church Bay, Rathlin Island</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Cause of Loss:</td>
+            <td class="data-cell">Torpedoed</td>
+            <td class="label-cell">Boat Dive from:</td>
+            <td class="data-cell">Ballycastle</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Charted Depth:</td>
+            <td class="data-cell">18m</td>
+            <td class="label-cell">Irish O.S. Map:</td>
+            <td class="data-cell">Discovery Series No. 5</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Height of Wreck:</td>
+            <td class="data-cell">3-4m</td>
+            <td class="label-cell">Admiralty Chart No:</td>
+            <td class="data-cell">2798</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Hull Material:</td>
+            <td class="data-cell">Armour plating</td>
+            <td class="label-cell">Latitude (GPS):</td>
+            <td class="data-cell">55° 17' 13.44" North</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Type of Seabed:</td>
+            <td class="data-cell">Sand over clay</td>
+            <td class="label-cell">Longitude (GPS):</td>
+            <td class="data-cell">06° 12' 33.66" West</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Average Visibility:</td>
+            <td class="data-cell">6 - 10m</td>
+            <td class="label-cell">Diving Experience:</td>
+            <td class="data-cell">Novice</td>
+        </tr>
+    </table>
+
+    <div class="section-header">Historical & Diving Notes</div>
+    <div class="notes-box">
+        <ul>
+            <li>Built in 1902 at Pembroke Dockyard; 14,100 ton Armoured Cruiser measuring 500 x 71 x 26ft.</li>
+            <li>Torpedoed by U-79 while escorting convoy HH24; rolled over and sank in Church Bay. 19 crew killed.</li>
+            <li>Royal Navy blew up the remains in 1979; the site now resembles a large salvage yard.</li>
+            <li>Diving: 6-inch guns visible; diveable at any state of tide. Fee for Ballycastle slipway.</li>
+            <li><strong>WARNING:</strong> Live ammunition may be present on-site in a dangerous state.</li>
+        </ul>
+    </div>
+
+    <div class="section-header">Source Publications</div>
+    <select id="pubSelect">
+        <option value="">-- Select a publication --</option>
+        <option value="hocking">Dictionary of Disasters at Sea</option>
+        <option value="larn">Shipwreck Index of Ireland</option>
+        <option value="bourke">Shipwrecks of the Irish Coast 932-1997</option>
+        <option value="wilson">Shipwrecks of the Ulster Coast</option>
+        <option value="minter">The Cruise of H.M.S. Drake (1907)</option>
+        <option value="archibald">The Fighting Ship in the Royal Navy</option>
+        <option value="cecil">The Harsh Winds of Rathlin</option>
+    </select>
+
+    <div id="source-details">
+        <p id="details-text"></p>
+    </div>
+</div>
+
+<script>
+    const publications = {
+        hocking: "Charles Hocking (1989). London Stamp Exchange. ISBN: 0948130474",
+        larn: "Richard & Bridget Larn (2002). Lloyd's Register - Fairplay Ltd. ISBN: 1900839970",
+        bourke: "Dr. Edward J. Bourke (1998). ISBN: 0952302713",
+        wilson: "Ian Wilson (1997). Impact Printing. ISBN: 0948154993",
+        minter: "J.A. Minter (1907). Historical service record.",
+        archibald: "E.H.H. Archibald (1984). Blandford Press. ISBN: 0713713488",
+        cecil: "Tommy Cecil (1990). Impact Printing. ISBN: 0948154659"
+    };
+
+    const select = document.getElementById('pubSelect');
+    const box = document.getElementById('source-details');
+    const text = document.getElementById('details-text');
+
+    select.addEventListener('change', function() {
+        if (this.value) {
+            text.textContent = publications[this.value];
+            box.style.display = 'block';
+        } else {
+            box.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andania SS (No. 103a) - Irish Wrecks Online Redesign</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0B192E;
+            --container-bg: #1B2A41;
+            --accent-button: #10B981;
+            --text-primary: #F8FAFC;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'EB Garamond', serif;
+            font-size: 18px; 
+            margin: 0;
+            padding: 0 0 40px 0;
+        }
+
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--container-bg);
+            padding: 15px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .logo-text { 
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'EB Garamond', serif;
+            color: var(--accent-button);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-button);
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header.page-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .last-update {
+            font-size: 1.1rem;
+            color: var(--accent-button);
+            font-style: italic;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--container-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            vertical-align: middle;
+        }
+
+        .label-cell {
+            font-weight: bold;
+            font-style: italic;
+            color: var(--accent-button);
+            width: 20%;
+        }
+
+        .data-cell {
+            width: 30%;
+        }
+
+        .section-header {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 2rem;
+            margin: 40px 0 15px 0;
+            border-bottom: 1px solid var(--accent-button);
+            padding-bottom: 10px;
+        }
+
+        .notes-box {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        ul { padding-left: 25px; }
+        li { margin-bottom: 12px; font-size: 1.2rem; }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 2px solid var(--accent-button);
+            border-radius: 4px;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #source-details {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-button);
+            display: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+        <div class="logo-text">IRISH WRECKS ONLINE</div>
+    </div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <header class="page-title">
+        <h1>Andania SS (No. 103a)</h1>
+        <span class="last-update">Last update - 16-Feb-2021</span>
+    </header>
+
+    <table>
+        <tr>
+            <td class="label-cell">Vessel Type:</td>
+            <td class="data-cell">Armed Passenger Liner</td>
+            <td class="label-cell">Location:</td>
+            <td class="data-cell">Co. Antrim</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Date of Loss:</td>
+            <td class="data-cell">27th January 1918</td>
+            <td class="label-cell">Place:</td>
+            <td class="data-cell">Between Rathlin & Mull of Kintyre</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Cause of Loss:</td>
+            <td class="data-cell">Torpedoed</td>
+            <td class="label-cell">Boat Dive from:</td>
+            <td class="data-cell">Ballycastle</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Charted Depth:</td>
+            <td class="data-cell">123m</td>
+            <td class="label-cell">Irish O.S. Map:</td>
+            <td class="data-cell">Discovery Series No. 5</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Height of Wreck:</td>
+            <td class="data-cell">13m</td>
+            <td class="label-cell">Admiralty Chart No:</td>
+            <td class="data-cell">2798</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Hull Material:</td>
+            <td class="data-cell">Steel</td>
+            <td class="label-cell">Latitude (GPS):</td>
+            <td class="data-cell">55° 25' 40.8" North</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Type of Seabed:</td>
+            <td class="data-cell">Sand over clay</td>
+            <td class="label-cell">Longitude (GPS):</td>
+            <td class="data-cell">06° 17' 37.2" West</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Average Visibility:</td>
+            <td class="data-cell">1 - 2m</td>
+            <td class="label-cell">Diving Experience:</td>
+            <td class="data-cell">Specialist Diving</td>
+        </tr>
+    </table>
+
+    <div class="section-header">Historical & Diving Notes</div>
+    <div class="notes-box">
+        <ul>
+            <li>Built by Scotts of Greenock in 1913; owned by Cunard Line. Grossed 13,405 tons and measured 520 x 64 x 43ft.</li>
+            <li>Armed with a 1 x 4 inch stern gun. Torpedoed by U-46 while 2 miles NNE of Altacarry Lighthouse.</li>
+            <li>Seven crew died; rest rescued by nearby vessels. Attempts to tow her were abandoned as she sank rapidly.</li>
+            <li>Lies 2 miles North-North-East of Altacarry Lighthouse. Wreck lies across the tide; bow is damaged.</li>
+            <li>A Tri-Mix dive for the very experienced. Tide is extremely strong and visibility is usually almost zero.</li>
+        </ul>
+    </div>
+
+    <div class="section-header">Source Publications</div>
+    <select id="pubSelect">
+        <option value="">-- Select a publication --</option>
+        <option value="hocking">Dictionary of Disasters at Sea</option>
+        <option value="stokes">Irish Wrecks Database</option>
+        <option value="larn">Shipwreck Index of Ireland</option>
+        <option value="bourke">Shipwrecks of the Irish Coast 932-1997</option>
+        <option value="wilson">Shipwrecks of the Ulster Coast</option>
+        <option value="cecil">The Harsh Winds of Rathlin</option>
+    </select>
+
+    <div id="source-details">
+        <p id="details-text"></p>
+    </div>
+</div>
+
+<script>
+    const publications = {
+        hocking: "Charles Hocking (1989). London Stamp Exchange. ISBN: 0948130474",
+        stokes: "Roy Stokes & Liam Dowling. Irish Wrecks Database.",
+        larn: "Richard & Bridget Larn (2002). Lloyd's Register - Fairplay Ltd. ISBN: 1900839970",
+        bourke: "Dr. Edward J. Bourke (1998). ISBN: 0952302713",
+        wilson: "Ian Wilson (1997). Impact Printing. ISBN: 0948154993",
+        cecil: "Tommy Cecil (1990). Impact Printing. ISBN: 0948154659"
+    };
+
+    const select = document.getElementById('pubSelect');
+    const box = document.getElementById('source-details');
+    const text = document.getElementById('details-text');
+
+    select.addEventListener('change', function() {
+        if (this.value) {
+            text.textContent = publications[this.value];
+            box.style.display = 'block';
+        } else {
+            box.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

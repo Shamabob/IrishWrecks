@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandon SS (No. 114b) - Irish Wrecks Online Redesign</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0B192E;
+            --container-bg: #1B2A41;
+            --accent-button: #10B981;
+            --text-primary: #F8FAFC;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'EB Garamond', serif;
+            font-size: 18px; 
+            margin: 0;
+            padding: 0 0 40px 0; /* Changed to 0 top for header flush */
+        }
+
+        /* --- NAVIGATION STYLES --- */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--container-bg);
+            padding: 15px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        .logo-text { 
+            font-size: 28px;
+            font-weight: 700;
+            font-family: 'EB Garamond', serif;
+            color: var(--accent-button);
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-button);
+        }
+        /* --- END NAVIGATION STYLES --- */
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header.page-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .last-update {
+            font-size: 1.1rem;
+            color: var(--accent-button);
+            font-style: italic;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--container-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 30px;
+        }
+
+        td {
+            padding: 12px 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+            vertical-align: middle;
+        }
+
+        .label-cell {
+            font-weight: bold;
+            font-style: italic;
+            color: var(--accent-button);
+            width: 20%;
+        }
+
+        .data-cell {
+            width: 30%;
+        }
+
+        .section-header {
+            font-family: 'Eagle Lake', cursive;
+            font-size: 2rem;
+            margin: 40px 0 15px 0;
+            border-bottom: 1px solid var(--accent-button);
+            padding-bottom: 10px;
+        }
+
+        .notes-box {
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        ul { padding-left: 25px; }
+        li { margin-bottom: 12px; font-size: 1.2rem; }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            border: 2px solid var(--accent-button);
+            border-radius: 4px;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #source-details {
+            margin-top: 15px;
+            padding: 15px;
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-button);
+            display: none;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+        <div class="logo-text">IRISH WRECKS ONLINE</div>
+    </div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <header class="page-title">
+        <h1>Bandon SS (No. 114b)</h1>
+        <span class="last-update">Last update - 27-Dec-2020</span>
+    </header>
+
+    <table>
+        <tr>
+            <td class="label-cell">Vessel Type:</td>
+            <td class="data-cell">Armed Steamer</td>
+            <td class="label-cell">Location:</td>
+            <td class="data-cell">Co. Waterford</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Date of Loss:</td>
+            <td class="data-cell">13th April 1917</td>
+            <td class="label-cell">Place:</td>
+            <td class="data-cell">Minehead</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Cause of Loss:</td>
+            <td class="data-cell">Torpedoed</td>
+            <td class="label-cell">Boat Dive from:</td>
+            <td class="data-cell">Dungarvan</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Charted Depth:</td>
+            <td class="data-cell">40m</td>
+            <td class="label-cell">Irish O.S. Map:</td>
+            <td class="data-cell">Discovery Series No. 82</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Height of Wreck:</td>
+            <td class="data-cell">5m</td>
+            <td class="label-cell">Admiralty Chart No:</td>
+            <td class="data-cell">2049</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Hull Material:</td>
+            <td class="data-cell">Steel</td>
+            <td class="label-cell">Latitude (GPS):</td>
+            <td class="data-cell">51° 56' 56.226" North</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Type of Seabed:</td>
+            <td class="data-cell">Gravel</td>
+            <td class="label-cell">Longitude (GPS):</td>
+            <td class="data-cell">07° 34' 47.976" West</td>
+        </tr>
+        <tr>
+            <td class="label-cell">Average Visibility:</td>
+            <td class="data-cell">15m</td>
+            <td class="label-cell">Diving Experience:</td>
+            <td class="data-cell">Experienced</td>
+        </tr>
+    </table>
+
+    <div class="section-header">Historical & Diving Notes</div>
+    <div class="notes-box">
+        <ul>
+            <li>Built in 1910 by Swan Hunter & Wigham Richardson; owned by City of Cork Steam Packet Co.Ltd.</li>
+            <li>Measured 81.07 x 11.32 x 5.28m, grossing 1,456 tons. Powered by a triple-expansion steam engine.</li>
+            <li>Armed with 1 x 3 pounder stern gun. Torpedoed by UC-44 while bound Liverpool for Cork with coal.</li>
+            <li>Lies in 33m, 2.75 miles South-West of Minehead. Bow lies East-South-East; extensively broken up.</li>
+            <li><strong>NOTE:</strong> Permission is required from archaeology.ie to dive this wreck. Dive at Slack Water.</li>
+        </ul>
+    </div>
+
+    <div class="section-header">Source Publications</div>
+    <select id="pubSelect">
+        <option value="">-- Select a publication --</option>
+        <option value="hocking">Dictionary of Disasters at Sea</option>
+        <option value="stokes">Irish Wrecks Database</option>
+        <option value="larn">Shipwreck Index of Ireland</option>
+        <option value="bourke97">Shipwrecks of the Irish Coast 932-1997</option>
+        <option value="bourke00">Shipwrecks of the Irish Coast 1582-2000</option>
+    </select>
+
+    <div id="source-details">
+        <p id="details-text"></p>
+    </div>
+</div>
+
+<script>
+    const publications = {
+        hocking: "Charles Hocking (1989). London Stamp Exchange. ISBN: 0948130474",
+        stokes: "Roy Stokes & Liam Dowling. Irish Wrecks Database.",
+        larn: "Richard & Bridget Larn (2002). Lloyd's Register - Fairplay Ltd. ISBN: 1900839970",
+        bourke97: "Dr. Edward J. Bourke (1998). ISBN: 0952302713",
+        bourke00: "Dr. Edward J. Bourke (2000). ISBN: 0952302721"
+    };
+
+    const select = document.getElementById('pubSelect');
+    const box = document.getElementById('source-details');
+    const text = document.getElementById('details-text');
+
+    select.addEventListener('change', function() {
+        if (this.value) {
+            text.textContent = publications[this.value];
+            box.style.display = 'block';
+        } else {
+            box.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

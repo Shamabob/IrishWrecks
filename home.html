@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irish Wrecks online</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    background-color: #1b2a41;
+    color: white;
+}
+
+/* HEADER */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B2A41;
+    padding: 15px 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.logo-text { 
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+    color: #10b983;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #F8FAFC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #10B981;
+}
+
+/* REST OF YOUR ORIGINAL CSS (UNCHANGED) */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+/* MAIN SECTION */
+.forum {
+    flex: 2;
+    background-color: #0b192e;
+    padding: 60px 50px;
+    min-width: 400px;
+}
+
+.forum h2 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #10b983;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.section-box {
+    background: #1b2a41;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(16,185,131,0.3);
+}
+
+.section-box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.section-box p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* SIDEBAR */
+aside { 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    min-width: 350px; 
+    background-color: #1b2a41;
+    padding: 40px 30px;
+}
+
+/* Shipwrecks List Section */
+.shipwrecks-list {
+    background-color: #0b192e;
+    border-radius: 8px;
+    padding: 30px;
+    border: 1px solid rgba(16,185,131,0.3);
+}
+
+.shipwrecks-list h3 {
+    color: #10b983;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #10b983;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.shipwrecks-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shipwreck-item {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.shipwreck-item:last-child {
+    border-bottom: none;
+}
+
+.shipwreck-link {
+    color: #F8FAFC;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    transition: color 0.3s ease;
+    font-family: 'EB Garamond', serif;
+}
+
+.shipwreck-link:hover {
+    color: #10b983;
+}
+
+.shipwreck-meta {
+    font-size: 16px;
+    color: rgba(248,250,252,0.7);
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.clubs{
+    background-color: #10b983;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.link { 
+    background-color: #1b2a41; 
+    border: none; 
+    padding: 15px 30px; 
+    margin: 20px 0; 
+    cursor: pointer; 
+}
+
+.link a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+.section { 
+    background-color: #1b2a41; 
+    padding: 60px 40px; 
+    flex: 1; 
+}
+
+.list { 
+    list-style: none;
+    margin-top: 20px; 
+}
+
+.item { 
+    margin-bottom: 25px; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+
+.date { 
+    font-size: 16px; 
+    font-weight: bold; 
+    display: block; 
+}
+
+.section a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 20px; 
+    font-weight: 600;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!--HEADER -->
+<header class="site-header">
+    <div class="logo-container">
+        <img src="logo.png" alt="Irish Wrecks Online Logo" class="logo-img">
+        <div class="logo-text">IRISH WRECKS ONLINE</div>
+    </div>
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="community.html">Community</a>
+    </nav>
+</header>
+
+<div class="content">
+
+    <!-- MAIN CONTENT -->
+    <section class="forum">
+        <h2>About Shipwreck Explorers</h2>
+
+        <div class="section-box">
+            <h3>Who We Are</h3>
+            <p>
+                Shipwreck Explorers is a community dedicated to discovering,
+                documenting, and discussing historic shipwreck sites around
+                the world. We connect divers, historians, and ocean explorers
+                who share a passion for maritime history.
+            </p>
+        </div>
+    </section><div class="map-container">
+    <svg viewBox="-30 -30 460 560" xmlns="http://www.w3.org/2000/svg">
+        <g class="grid-lines" stroke="#2C4A73" stroke-width="1.5" stroke-dasharray="4">
+            <line x1="0" y1="0" x2="0" y2="500" />
+            <line x1="100" y1="0" x2="100" y2="500" />
+            <line x1="200" y1="0" x2="200" y2="500" />
+            <line x1="300" y1="0" x2="300" y2="500" />
+            <line x1="400" y1="0" x2="400" y2="500" />
+
+            <line x1="0" y1="0" x2="400" y2="0" />
+            <line x1="0" y1="100" x2="400" y2="100" />
+            <line x1="0" y1="200" x2="400" y2="200" />
+            <line x1="0" y1="300" x2="400" y2="300" />
+            <line x1="0" y1="400" x2="400" y2="400" />
+            <line x1="0" y1="500" x2="400" y2="500" />
+        </g>
+
+        <g class="grid-labels" fill="#F8FAFC" font-family="Arial" font-size="13" font-weight="bold" opacity="0.9">
+            <text x="50" y="-12" text-anchor="middle">A</text>
+            <text x="150" y="-12" text-anchor="middle">B</text>
+            <text x="250" y="-12" text-anchor="middle">C</text>
+            <text x="350" y="-12" text-anchor="middle">D</text>
+            
+            <text x="-20" y="55">1</text>
+            <text x="-20" y="155">2</text>
+            <text x="-20" y="255">3</text>
+            <text x="-20" y="355">4</text>
+            <text x="-20" y="455">5</text>
+        </g>
+
+        <path d="M210,15 L245,25 L255,15 L275,35 L285,75 L335,90 L350,130 L345,180 L365,260 L350,320 L340,400 L310,440 L280,475 L240,485 L180,485 L145,465 L110,475 L90,440 L115,410 L85,385 L65,340 L100,285 L85,260 L125,190 L185,165 L175,135 L180,85 L200,60 Z" class="map-land" />
+        
+        <g class="city-label" transform="translate(235, 55)"><text>L'Derry</text></g>
+        <g class="city-label" transform="translate(320, 105)"><text>Belfast</text></g>
+        <g class="city-label" transform="translate(180, 150)"><text>Sligo</text></g>
+        <g class="city-label" transform="translate(315, 270)"><text>Dublin</text></g>
+        <g class="city-label" transform="translate(155, 300)"><text>Galway</text></g>
+        <g class="city-label" transform="translate(200, 365)"><text>Limerick</text></g>
+        <g class="city-label" transform="translate(285, 425)"><text>Waterford</text></g>
+        <g class="city-label" transform="translate(205, 460)"><text>Cork</text></g>
+    </svg>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+    .map-container {
+        background-color: #0B192E;
+        padding: 40px;
+        border-radius: 12px;
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .map-land {
+        fill: #10B981;
+        stroke: #0B192E;
+        stroke-width: 1;
+    }
+
+    .city-label text {
+        fill: #F8FAFC;
+        font-family: 'Eagle Lake', serif;
+        font-size: 14px;
+        text-anchor: middle;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.8));
+    }
+
+    .city-label:hover text {
+        font-size: 22px;
+        fill: #FFFFFF;
+    }
+</style>
+
+        <div class="section-box">
+            <h3>Our Mission</h3>
+            <p>
+                Our mission is to preserve maritime heritage, share underwater
+                discoveries, and inspire responsible diving exploration through
+                community collaboration and knowledge exchange.
+            </p>
+        </div>
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside>
+        <div class="shipwrecks-list">
+            <h3>⚓ Featured Shipwrecks</h3>
+            <ul>
+                <li class="shipwreck-item">
+                    <a href="Andania.html" class="shipwreck-link">SS Andania</a>
+                    <div class="shipwreck-meta">Sunk 1918 • Co. Antrim</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Bandon.html" class="shipwreck-link">SS Bandon</a>
+                    <div class="shipwreck-meta">Sunk 1917 • Co. Waterford</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Bolivar.html" class="shipwreck-link">SS Bolivar</a>
+                    <div class="shipwreck-meta">Sunk 1947 • Co. Dublin</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Bouncer.html" class="shipwreck-link">HMS Bouncer</a>
+                    <div class="shipwreck-meta">Sunk 1921 • Co. Antrim</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Dalriada.html" class="shipwreck-link">SS Dalriada</a>
+                    <div class="shipwreck-meta">Sunk 1910 • Co. Antrim</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Gavina.html" class="shipwreck-link">RMS Gavina</a>
+                    <div class="shipwreck-meta">Sunk 1921 • Co. Antrim</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Guillemot.html" class="shipwreck-link">SS Guillemot</a>
+                    <div class="shipwreck-meta">Sunk 1917 • Co. Wicklow
+                    </div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Invercauld.html" class="shipwreck-link">HMS Invercauld</a>
+                    <div class="shipwreck-meta">Sunk 1917 • Co. Wexford</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Malmanger.html" class="shipwreck-link">HMS Malmanger</a>
+                    <div class="shipwreck-meta">Sunk 1917 • Co. Cork</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Polewell.html" class="shipwreck-link">HMS Polewell</a>
+                    <div class="shipwreck-meta">Sunk 1917 • Co. Dublin</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="ShaunShaun.html" class="shipwreck-link">HMS ShaunShaun</a>
+                    <div class="shipwreck-meta">Sunk 2008 • Co. Donegal</div>
+                </li>
+                <li class="shipwreck-item">
+                    <a href="Troutpool.html" class="shipwreck-link">HMS Troutpool</a>
+                    <div class="shipwreck-meta">Sunk 1940 • Co. Down</div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+</div>
+</div>
+
+</body>
+</html>
